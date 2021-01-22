@@ -1,0 +1,10 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+p:nth-of-type(1){
+	margin-top: 18px;
+}
+p{
+	position:static;
+}
