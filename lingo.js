@@ -522,10 +522,10 @@ div.style.height = "270px";
 
 
 for(i=1; i<6; i++){
-var div2 = document.createElement("div");
-div.appendChild(div2);
-div2.style.marginLeft = "180px";
-div2.id = "divje" + i;
+	var div2 = document.createElement("div");
+	div.appendChild(div2);
+	div2.style.marginLeft = "180px";
+	div2.id = "divje" + i;
 }
 var aantal = 0
 var trys = 0
@@ -538,7 +538,6 @@ for(x=0; x<5; x++){
 			var node4 = document.createTextNode(splitrandomword[0]);
 			p.appendChild(node4)
 		}
-		
 		var p = document.createElement("p");
 		p.style.display = "inline-block";
 		p.style.padding = "6px 12px 12px 12px";
@@ -546,15 +545,11 @@ for(x=0; x<5; x++){
 		p.style.width = "7px";
 		p.style.border = "1px solid black";
 		p.style.marginLeft = "10px";
-
 		var div3 = document.getElementById("divje" + aantal);
 		div3.appendChild(p);
 		p.innerHTML = "-"
 		p.id = "p" + aantall;
-
 		var pid2 = document.getElementById("p" + aantall);
-
-
 		if(aantall == 0 || aantall == 5 || aantall == 10 || aantall == 15 || aantall == 20){
 			p.innerHTML = ""
 			var pid = document.getElementById("p" + aantall);
@@ -593,7 +588,6 @@ button.onclick = function(){
 
 	for(i=0; i<5; i++){
 		for(x=0; x<5; x++){
-			
 			if(splitrandomword[i] == " "){
 				var partmatchp = document.getElementById("p" + getal1)
 				partmatchp.style.backgroundColor = "green";
